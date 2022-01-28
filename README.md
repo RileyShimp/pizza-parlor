@@ -43,3 +43,9 @@ Code:
 const pizza1 = new Pizza("small", "pepperoni");
 pizza1.priceOfSize();
 Expected Output: 11
+
+Test: "It should add 2 to price for pepperoni and pineapple"
+Code: 
+const pizza1 = new Pizza("small", "pepperoni");
+pizza1.priceOfSize();
+Expected Output: 12

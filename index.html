@@ -5,9 +5,36 @@
   <link rel='stylesheet' href='css/styles.css' type='text/css'>
   <script src='js/jquery-3.6.0.js'></script>
   <script src='js/scripts.js'></script>
-  <title></title>
+  <title>Pizza Planet</title>
 </head>
 <body>
-
+  <div class="container">
+    <form class="formbox" id+>
+      <div>
+        <h2>welcome to</h2>
+        <h1>PIZZA PLANET</h1>
+      </div>
+      <div class="form-group">
+        <label for="size">What Size Pizza would you like?</label>
+        <select class="form-control" name="size" id="size">
+          <option value="small">Small</option>
+          <option value="medium">Medium</option>
+          <option value="large">Large</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label for="toppings">What do you like on your pizza?</label>
+        <select class="form-control" name="toppings" id="toppings">
+          <option value="pepperoni">Pepperoni</option>
+          <option value="pepperoni">Pineapple</option>
+          <option value="pepperoni and pineapple">Pepperoni and Pineapple</option>
+        </select>
+      </div>
+      <button type="submit" class="btn btn-dark btn-lg btn-block">SUBMIT</button>
+    </form>
+    <div class="card">
+      <p id="output">Price:</p>
+    </div>
+  </div>
 </body>
 </html>
