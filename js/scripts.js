@@ -41,6 +41,7 @@ $(document).ready(function() {
     $("#pizzaForm").hide();
     $("#pizzaForm2").hide();
     $("#pizzaForm3").hide();
+    $("#qForm").hide();
     $(".s1").hide();
     $(".s2").hide();
     $(".s3").hide();
@@ -63,6 +64,8 @@ $(document).ready(function() {
   })
   $("form").submit(function(event) {
     event.preventDefault();
+    $("#qForm").hide();
+    $("#mainForm").hide();
     $("#price").show();
     const inputQuantity = $("#quantity").val();
     const inputSize = $("#size").val();
@@ -80,7 +83,6 @@ $(document).ready(function() {
     pizza2.priceOfToppings();
     pizza3.priceOfSize();
     pizza3.priceOfToppings();
-
     if (inputQuantity === "1") {
       $("#output").text(pizza1.price);
     }
@@ -90,6 +92,5 @@ $(document).ready(function() {
     else if (inputQuantity === "3") {
       $("#output").text(pizza1.price + pizza2.price + pizza3.price);
     }
-    // $("#output").text(pizza1.price + pizza2.price + pizza3.price);
   })
 })
