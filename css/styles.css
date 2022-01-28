@@ -11,6 +11,10 @@ body {
     100% {background-position: 100%}
 }
 
+#mainForm {
+  display: none;
+}
+
 #pizzaForm {
   display: none;
 }
@@ -36,10 +40,11 @@ body {
 }
 
 #price {
-  margin-bottom: 500px;
+  margin-bottom: 100px;
   margin-top: 50px;
   margin-left: 30%;
   margin-right: 30%;
+  display: none;
 }
 
 h1 {
@@ -82,6 +87,7 @@ header h2 {
   background-size: 20%;
   background-color: rgba(0, 0, 0, 0);
   padding-bottom: 1px;
+  padding-bottom: 400px;
 }
 
 .card {

@@ -38,6 +38,13 @@ $(document).ready(function() {
   $("#qButton").click(function(event) {
     event.preventDefault();
     const inputQuantity = $("#quantity").val();
+    $("#pizzaForm").hide();
+    $("#pizzaForm2").hide();
+    $("#pizzaForm3").hide();
+    $(".s1").hide();
+    $(".s2").hide();
+    $(".s3").hide();
+    $("#mainForm").show();
     if (inputQuantity === "1") {
       $("#pizzaForm").show();
       $(".s1").show();
@@ -45,27 +52,36 @@ $(document).ready(function() {
     else if (inputQuantity === "2") {
       $("#pizzaForm").show();
       $("#pizzaForm2").show();
-      $(".s1").hide();
       $(".s2").show();
     }
     else if (inputQuantity === "3") {
       $("#pizzaForm").show();
       $("#pizzaForm2").show();
       $("#pizzaForm3").show();
-      $(".s2").hide();
       $(".s3").show();
     }
   })
   $("form").submit(function(event) {
     event.preventDefault();
+    $("#price").show();
     const inputSize = $("#size").val();
+    const inputSize2 = $("#size2").val();
+    const inputSize3 = $("#size3").val();
     const inputToppings = $("#toppings").val();
+    const inputToppings2 = $("#toppings2").val();
+    const inputToppings3 = $("#toppings3").val();
 
     const pizza1 = new Pizza(inputSize, inputToppings)
+    const pizza2 = new Pizza(inputSize2, inputToppings2)
+    const pizza3 = new Pizza(inputSize3, inputToppings3)
 
     pizza1.priceOfSize();
     pizza1.priceOfToppings();
+    pizza2.priceOfSize();
+    pizza2.priceOfToppings();
+    pizza3.priceOfSize();
+    pizza3.priceOfToppings();
 
-    $("#output").text(pizza1.price);
+    $("#output").text(pizza1.price + pizza2.price + pizza3.price);
   })
 })
