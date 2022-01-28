@@ -1,7 +1,7 @@
 body {
-    background-image: url(../img/pizzaplanet.jpeg);
-    background-size:  150% 100%;
-    animation: changeColor 20s alternate infinite;
+    background-image: url(../img/dario-bronnimann-hNQwIirOseE-unsplash.jpg);
+    background-size:  200% 100%;
+    animation: changeColor 10s alternate infinite;
     color: aliceblue;
     font-weight: 700;
   }
@@ -13,19 +13,38 @@ body {
 
   #price {
     margin-bottom: 500px;
+    margin-top: 50px;
+    margin-left: 30%;
+    margin-right: 30%;
   }
+
+h1 {
+  font-weight: 900;
+}
+
+#price h3 {
+  font-weight: 900;
+  border-bottom: solid black 3px;
+}
 
 header {
   padding-top: 120px;
+  padding-bottom: 70px;
   text-align: center;
 }
 
 header h1 {
   font-weight: 900;
+  font-size: 600%;
+  margin-top: 1px;
+  padding-top: 1px;
 }
 
 header h2 {
   font-weight: 700;
+  font-size: 300%;
+  margin-bottom: 1px;
+  padding-bottom: 1px;
 }
 
 .container-lg {
@@ -33,4 +52,15 @@ header h2 {
   background-size: 20%;
   background-color: rgba(0, 0, 0, 0);
   padding-bottom: 1px;
+}
+
+.card {
+  color: rgb(38, 38, 38);
+  text-align: center;
+  background-image: url(../img/sj-objio-XFWiZTa2Ub0-unsplash.jpg);
+  background-size: cover;
+  box-shadow: 0 24px 28px 0 rgba(0, 0, 0, 0.8), 0 26px 40px 0 rgba(0, 0, 0, 0.7);
+  padding-top: 20px;
+  margin-left: 10%;
+  margin-right: 10%;
 }

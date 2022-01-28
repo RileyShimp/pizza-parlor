@@ -15,29 +15,33 @@
       <h1>PIZZA PLANET</h1>
     </div>
     </header>
-    <form class="formbox">
-      <div class="form-group">
-        <label for="size">What size pizza would you like?</label>
-        <select class="form-control" name="size" id="size">
-          <option value="small">Small</option>
-          <option value="medium">Medium</option>
-          <option value="large">Large</option>
-        </select>
-      </div>
-      <div class="form-group">
-        <label for="toppings">What kind of pizza would you like?</label>
-        <select class="form-control" name="toppings" id="toppings">
-          <option value="cheese">Cheese</option>
-          <option value="pepperoni">Pepperoni</option>
-          <option value="pineapple">Pineapple</option>
-          <option value="pepperoni and pineapple">Pepperoni and Pineapple</option>
-          <option value="meat lovers">Meat Lovers Supreme</option>
-        </select>
+    <form class="formbox card">
+      <h1>Choose Your Pizza</h1>
+      <div class="row">
+        <div class="form-group col">
+          <label for="size">What size pizza would you like?</label>
+          <select class="form-control" name="size" id="size">
+            <option value="small">Small</option>
+            <option value="medium">Medium</option>
+            <option value="large">Large</option>
+          </select>
+        </div>
+        <div class="form-group col">
+          <label for="toppings">What kind of pizza would you like?</label>
+          <select class="form-control" name="toppings" id="toppings">
+            <option value="cheese">Cheese</option>
+            <option value="pepperoni">Pepperoni</option>
+            <option value="pineapple">Pineapple</option>
+            <option value="pepperoni and pineapple">Pepperoni and Pineapple</option>
+            <option value="meat lovers">Meat Lovers Supreme</option>
+          </select>
+        </div>
       </div>
       <button type="submit" class="btn btn-dark btn-lg btn-block">SUBMIT</button>
     </form>
     <div  id="price" class="card">
-      <h3>$<span id="output"></span></h3>
+      <h3>Total Cost</h3>
+      <h2>$<span id="output"></span></h2>
     </div>
   </div>
 </body>
