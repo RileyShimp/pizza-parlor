@@ -2,6 +2,8 @@ body {
     background-image: url(../img/pizzaplanet.jpeg);
     background-size:  150% 100%;
     animation: changeColor 20s alternate infinite;
+    color: aliceblue;
+    font-weight: 700;
   }
   
   @keyframes changeColor {
@@ -10,5 +12,25 @@ body {
   }
 
   #price {
-    margin-bottom: 700px;
+    margin-bottom: 500px;
   }
+
+header {
+  padding-top: 120px;
+  text-align: center;
+}
+
+header h1 {
+  font-weight: 900;
+}
+
+header h2 {
+  font-weight: 700;
+}
+
+.container-lg {
+  background-image: url(../img/pizzacard2.png);
+  background-size: 20%;
+  background-color: rgba(0, 0, 0, 0);
+  padding-bottom: 1px;
+}
