@@ -1,0 +1,14 @@
+body {
+    background-image: url(../img/pizzaplanet.jpeg);
+    background-size:  150% 100%;
+    animation: changeColor 20s alternate infinite;
+  }
+  
+  @keyframes changeColor {
+      0% {background-position: 0%}
+      100% {background-position: 100%}
+  }
+
+  #price {
+    margin-bottom: 700px;
+  }
