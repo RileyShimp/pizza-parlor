@@ -17,11 +17,20 @@ Pizza.prototype.priceOfSize = function() {
 }
 
 Pizza.prototype.priceOfToppings = function() {
-  if (this.toppings === "pepperoni") {
+  if (this.toppings === "cheese") {
     return this.price += 1;
   }
-  else if (this.toppings === "pepperoni and pineapple") {
+  else if (this.toppings === "pepperoni") {
     return this.price += 2;
+  }
+  else if (this.toppings === "pineapple") {
+    return this.price += 3;
+  }
+  else if (this.toppings === "pepperoni and pineapple") {
+    return this.price += 5;
+  }
+  else if (this.toppings === "meat lovers") {
+    return this.price += 10;
   }
 }
 
