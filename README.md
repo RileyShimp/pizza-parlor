@@ -12,3 +12,8 @@ const pizza1 = new Pizza("large", "pepperoni");
 pizza1.priceOfSize();
 Expected Output: 20
 
+Test: "It should return 20 if the pizza is large"
+Code: 
+const pizza1 = new Pizza("large", "pepperoni");
+pizza1.priceOfSize();
+Expected Output: 20
