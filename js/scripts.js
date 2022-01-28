@@ -98,6 +98,14 @@ $(document).ready(function() {
     $("#price").hide();
     $("#qForm").show();
   })
+  $("#restart").click(function(event) {
+    event.preventDefault();
+    $("#restart").hide();
+    $("#checkoutForm").hide();
+    $("#carryOut").hide();
+    $("#deliveryMessage").hide();
+    $("#qForm").show();
+  })
   $("#checkout").click(function(event) {
     event.preventDefault();
     $("#price").hide();
@@ -109,6 +117,7 @@ $(document).ready(function() {
     const toGo = $("#toGo").val();
     if (toGo === "carry out"){
       $("#carryOut").show();
+      $("#restart").show();
     }
     else if (toGo === "delivery"){
       $("#delivery").show();
@@ -118,5 +127,6 @@ $(document).ready(function() {
     event.preventDefault();
     $("#delivery").hide();
     $("#deliveryMessage").show();
+    $("#restart").show();
   })
 })
