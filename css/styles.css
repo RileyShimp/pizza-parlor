@@ -39,6 +39,24 @@ body {
   display: none;
 }
 
+#carryOut {
+  display: none;
+}
+
+#delivery {
+  display: none;
+}
+
+#deliveryMessage {
+  display: none;
+}
+
+#checkoutForm {
+  display: none;
+  margin-left: 20%;
+  margin-right: 20%;
+}
+
 #price {
   margin-bottom: 100px;
   margin-top: 50px;

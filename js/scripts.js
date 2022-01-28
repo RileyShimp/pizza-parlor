@@ -103,4 +103,20 @@ $(document).ready(function() {
     $("#price").hide();
     $("#checkoutForm").show();
   })
+  $("#toGoButton").click(function(event) {
+    event.preventDefault();
+    $("#checkoutForm").hide();
+    const toGo = $("#toGo").val();
+    if (toGo === "carry out"){
+      $("#carryOut").show();
+    }
+    else if (toGo === "delivery"){
+      $("#delivery").show();
+    }
+  })
+  $("#deliveryButton").click(function(event) {
+    event.preventDefault();
+    $("#delivery").hide();
+    $("#deliveryMessage").show();
+  })
 })
