@@ -16,5 +16,9 @@ Pizza.prototype.priceOfSize = function() {
   return this.price;
 }
 
+Pizza.prototype.priceOfToppings = function() {
+
+}
+
 
 // const pizza1 = new Pizza("large", "pepperoni");
