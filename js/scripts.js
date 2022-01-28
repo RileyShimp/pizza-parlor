@@ -26,4 +26,5 @@ Pizza.prototype.priceOfToppings = function() {
 }
 
 
+
 // const pizza1 = new Pizza("small", "pepperoni");

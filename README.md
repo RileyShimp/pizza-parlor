@@ -37,3 +37,9 @@ Code:
 const pizza1 = new Pizza("small", "pepperoni");
 pizza1.priceOfSize();
 Expected Output: 11
+
+Test: "It should add 1 to price for pepperoni"
+Code: 
+const pizza1 = new Pizza("small", "pepperoni");
+pizza1.priceOfSize();
+Expected Output: 11
