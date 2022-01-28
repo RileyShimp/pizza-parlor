@@ -25,6 +25,20 @@ Pizza.prototype.priceOfToppings = function() {
   }
 }
 
+//UI Logic
+
+$(document).ready(function() {
+  $("form").submit(function(event) {
+    event.preventDefault();
+    const inputSize = $("#size").val();
+    const inputToppings = $("#toppings").val();
+    const pizza1 = new Pizza(inputSize, inputToppings)
+    pizza1.priceOfSize();
+    pizza1.priceOfToppings();
+    $("#output").text(pizza1.price);
+  })
+})
+
 
 
 // const pizza1 = new Pizza("small", "pepperoni");
