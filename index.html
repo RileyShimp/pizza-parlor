@@ -9,39 +9,52 @@
 </head>
 <body>
   <div class="container-lg">
-  <header>
-    <div>
-      <h2>welcome to</h2>
-      <h1>PIZZA PLANET</h1>
-    </div>
-    </header>
-    <form class="formbox card">
-      <h1>Choose Your Pizza</h1>
-      <div class="row">
-        <div class="form-group col">
-          <label for="size">What size pizza would you like?</label>
-          <select class="form-control" name="size" id="size">
-            <option value="small">Small</option>
-            <option value="medium">Medium</option>
-            <option value="large">Large</option>
-          </select>
-        </div>
-        <div class="form-group col">
-          <label for="toppings">What kind of pizza would you like?</label>
-          <select class="form-control" name="toppings" id="toppings">
-            <option value="cheese">Cheese</option>
-            <option value="pepperoni">Pepperoni</option>
-            <option value="pineapple">Pineapple</option>
-            <option value="pepperoni and pineapple">Pepperoni and Pineapple</option>
-            <option value="meat lovers">Meat Lovers Supreme</option>
-          </select>
-        </div>
+    <header>
+      <div>
+        <h2>welcome to</h2>
+        <h1>PIZZA PLANET</h1>
       </div>
-      <button type="submit" class="btn btn-dark btn-lg btn-block">SUBMIT</button>
+    </header>
+    <form id="qForm" class="card">
+      <div class="form-group col 6">
+        <label for="quantity">How many pizzas would you like?</label>
+        <select class="form-control" name="quantity" id="quantity">
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+        </select>
+        <button id="qButton" type="submit" class="btn btn-dark btn-lg btn-block">GO!</button>
+      </div>
     </form>
-    <div  id="price" class="card">
-      <h3>Total Cost</h3>
-      <h2>$<span id="output"></span></h2>
+    <div id="pizzaForm">
+      <form class="formbox card">
+        <h1>Choose Your Pizza</h1>
+        <div class="row">
+          <div class="form-group col">
+            <label for="size">What size pizza would you like?</label>
+            <select class="form-control" name="size" id="size">
+              <option value="small">Small</option>
+              <option value="medium">Medium</option>
+              <option value="large">Large</option>
+            </select>
+          </div>
+          <div class="form-group col">
+            <label for="toppings">What kind of pizza would you like?</label>
+            <select class="form-control" name="toppings" id="toppings">
+              <option value="cheese">Cheese</option>
+              <option value="pepperoni">Pepperoni</option>
+              <option value="pineapple">Pineapple</option>
+              <option value="pepperoni and pineapple">Pepperoni and Pineapple</option>
+              <option value="meat lovers">Meat Lovers Supreme</option>
+            </select>
+          </div>
+        </div>
+        <button id="submit" type="submit" class="btn btn-dark btn-lg btn-block">SUBMIT</button>
+      </form>
+      <div  id="price" class="card">
+        <h3>Total Cost</h3>
+        <h2>$<span id="output"></span></h2>
+      </div>
     </div>
   </div>
 </body>

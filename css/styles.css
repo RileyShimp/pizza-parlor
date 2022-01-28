@@ -1,22 +1,26 @@
 body {
-    background-image: url(../img/dario-bronnimann-hNQwIirOseE-unsplash.jpg);
-    background-size:  200% 100%;
-    animation: changeColor 10s alternate infinite;
-    color: aliceblue;
-    font-weight: 700;
-  }
-  
-  @keyframes changeColor {
-      0% {background-position: 0%}
-      100% {background-position: 100%}
-  }
+  background-image: url(../img/dario-bronnimann-hNQwIirOseE-unsplash.jpg);
+  background-size:  300% 100%;
+  animation: changeColor 10s alternate infinite;
+  color: aliceblue;
+  font-weight: 700;
+}
 
-  #price {
-    margin-bottom: 500px;
-    margin-top: 50px;
-    margin-left: 30%;
-    margin-right: 30%;
-  }
+@keyframes changeColor {
+    0% {background-position: 0%}
+    100% {background-position: 100%}
+}
+
+#pizzaForm {
+  display: none;
+}
+
+#price {
+  margin-bottom: 500px;
+  margin-top: 50px;
+  margin-left: 30%;
+  margin-right: 30%;
+}
 
 h1 {
   font-weight: 900;
@@ -25,6 +29,12 @@ h1 {
 #price h3 {
   font-weight: 900;
   border-bottom: solid black 3px;
+}
+
+#qForm {
+  margin-left: 30%;
+  margin-right: 30%;
+  margin-bottom: 30px;
 }
 
 header {
