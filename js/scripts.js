@@ -32,8 +32,6 @@ Pizza.prototype.priceOfToppings = function() {
   }
 }
 
-//UI Logic
-
 $(document).ready(function() {
   $("#qButton").click(function(event) {
     event.preventDefault();
