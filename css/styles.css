@@ -42,9 +42,14 @@ body {
 #price {
   margin-bottom: 100px;
   margin-top: 50px;
-  margin-left: 30%;
-  margin-right: 30%;
+  margin-left: 25%;
+  margin-right: 25%;
   display: none;
+}
+
+#price button {
+  padding: 10px;
+  margin: 10px;
 }
 
 h1 {
@@ -53,7 +58,7 @@ h1 {
 
 #price h3 {
   font-weight: 900;
-  border-bottom: solid black 3px;
+  border-bottom: solid rgb(60, 60, 60) 3px;
 }
 
 #qForm {
@@ -99,4 +104,5 @@ header h2 {
   padding-top: 20px;
   margin-left: 10%;
   margin-right: 10%;
+  padding: 10px;
 }
