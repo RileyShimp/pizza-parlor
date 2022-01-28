@@ -1,3 +1,38 @@
+# Pizza Parlor
+
+[Github Pages Link](https://rileyshimp.github.io/pizza-parlor/)
+
+#### [Riley Shimp](https://www.github.com/rileyshimp)
+
+## Technologies Used
+
+* HTML
+* CSS
+* JavaScript
+* Bootstrap
+* JQuery
+
+## Description
+This is a page for a pizza parlor! Select the size and toppings you want, and it will display the cost of your pizza!
+
+## Setup/Installation Requirements
+
+Open this [Github Pages Link](https://rileyshimp.github.io/pizza-parlor/) in your browser.
+
+or follow the instructions below..
+
+### Step 1
+Clone the repository:
+``` 
+$ git clone https://github.com/RileyShimp/pizza-parlor.git 
+```
+### Step 2
+Navigate to the `pizza-parlor` directory on your computer.
+### Step 3
+Open `index.html` in your preferred browser
+
+## Tests:
+
 Describe: Pizza()
 
 Test: "It should return a pizza object with two properties for toppings and size"
@@ -49,3 +84,13 @@ Code:
 const pizza1 = new Pizza("small", "pepperoni");
 pizza1.priceOfSize();
 Expected Output: 12
+
+## Known Bugs
+
+* none
+
+## License
+
+[MIT](https://opensource.org/licenses/MIT)
+
+Copyright (c) 01/07/2022 Riley Shimp
