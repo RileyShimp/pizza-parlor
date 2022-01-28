@@ -17,3 +17,15 @@ Code:
 const pizza1 = new Pizza("large", "pepperoni");
 pizza1.priceOfSize();
 Expected Output: 20
+
+Test: "It should return 15 if the pizza is medium"
+Code: 
+const pizza1 = new Pizza("medium", "pepperoni");
+pizza1.priceOfSize();
+Expected Output: 15
+
+Test: "It should return 10 if the pizza is small"
+Code: 
+const pizza1 = new Pizza("small", "pepperoni");
+pizza1.priceOfSize();
+Expected Output: 10
