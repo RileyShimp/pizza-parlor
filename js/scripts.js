@@ -93,4 +93,14 @@ $(document).ready(function() {
       $("#output").text(pizza1.price + pizza2.price + pizza3.price);
     }
   })
+  $("#startover").click(function(event) {
+    event.preventDefault();
+    $("#price").hide();
+    $("#qForm").show();
+  })
+  $("#checkout").click(function(event) {
+    event.preventDefault();
+    $("#price").hide();
+    $("#checkoutForm").show();
+  })
 })
