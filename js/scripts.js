@@ -45,8 +45,11 @@ $(document).ready(function() {
       $("#pizzaForm").show();
       $("#pizzaForm2").show();
     }
-
-    
+    else if (inputQuantity === "3") {
+      $("#pizzaForm").show();
+      $("#pizzaForm2").show();
+      $("#pizzaForm3").show();
+    }
   })
   $("form").submit(function(event) {
     event.preventDefault();
