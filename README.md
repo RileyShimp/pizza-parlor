@@ -29,3 +29,11 @@ Code:
 const pizza1 = new Pizza("small", "pepperoni");
 pizza1.priceOfSize();
 Expected Output: 10
+
+Describe: priceOfToppings()
+
+Test: "It should return a price based on the toppings of Pizza"
+Code: 
+const pizza1 = new Pizza("small", "pepperoni");
+pizza1.priceOfSize();
+Expected Output: 11
