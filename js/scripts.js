@@ -40,15 +40,20 @@ $(document).ready(function() {
     const inputQuantity = $("#quantity").val();
     if (inputQuantity === "1") {
       $("#pizzaForm").show();
+      $(".s1").show();
     }
     else if (inputQuantity === "2") {
       $("#pizzaForm").show();
       $("#pizzaForm2").show();
+      $(".s1").hide();
+      $(".s2").show();
     }
     else if (inputQuantity === "3") {
       $("#pizzaForm").show();
       $("#pizzaForm2").show();
       $("#pizzaForm3").show();
+      $(".s2").hide();
+      $(".s3").show();
     }
   })
   $("form").submit(function(event) {
