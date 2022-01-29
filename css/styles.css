@@ -51,6 +51,10 @@ body {
   display: none;
 }
 
+#orderMessage {
+  display: none;
+}
+
 #restart {
   display: none;
 }
@@ -91,7 +95,7 @@ h1 {
 
 header {
   padding-top: 120px;
-  padding-bottom: 70px;
+  padding-bottom: 50px;
   text-align: center;
 }
 
@@ -124,6 +128,7 @@ header h2 {
   background-size: cover;
   box-shadow: 0 24px 28px 0 rgba(0, 0, 0, 0.8), 0 26px 40px 0 rgba(0, 0, 0, 0.7);
   padding-top: 20px;
+  margin-top: 45px;
   margin-left: 10%;
   margin-right: 10%;
   padding: 10px;

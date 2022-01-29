@@ -83,12 +83,21 @@ $(document).ready(function() {
     pizza3.priceOfToppings();
     if (inputQuantity === "1") {
       $("#output").text(pizza1.price);
+      $("#total").text(pizza1.price);
+      $("#order1").text("One" + " " + pizza1.size + " " + pizza1.toppings + " " + "$" + pizza1.price);
     }
     else if (inputQuantity === "2") {
       $("#output").text(pizza1.price + pizza2.price);
+      $("#total").text(pizza1.price + pizza2.price);
+      $("#order1").text("One" + " " + pizza1.size + " " + pizza1.toppings + " " + "$" + pizza1.price);
+      $("#order2").text("One" + " " + pizza2.size + " " + pizza2.toppings + " " + "$" + pizza2.price);
     }
     else if (inputQuantity === "3") {
       $("#output").text(pizza1.price + pizza2.price + pizza3.price);
+      $("#total").text(pizza1.price + pizza2.price + pizza3.price);
+      $("#order1").text("One" + " " + pizza1.size + " " + pizza1.toppings + " " + "$" + pizza1.price);
+      $("#order2").text("One" + " " + pizza2.size + " " + pizza2.toppings + " " + "$" + pizza2.price);
+      $("#order3").text("One" + " " + pizza3.size + " " + pizza3.toppings + " " + "$" + pizza3.price);
     }
   })
   $("#startover").click(function(event) {
@@ -102,6 +111,7 @@ $(document).ready(function() {
     $("#checkoutForm").hide();
     $("#carryOut").hide();
     $("#deliveryMessage").hide();
+    $("#orderMessage").hide();
     $("#qForm").show();
   })
   $("#checkout").click(function(event) {
@@ -116,6 +126,7 @@ $(document).ready(function() {
     if (toGo === "carry out"){
       $("#carryOut").show();
       $("#restart").show();
+      $("#orderMessage").show();
     }
     else if (toGo === "delivery"){
       $("#delivery").show();
@@ -125,6 +136,7 @@ $(document).ready(function() {
     event.preventDefault();
     $("#delivery").hide();
     $("#deliveryMessage").show();
+    $("#orderMessage").show();
     $("#restart").show();
   })
 })
