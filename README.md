@@ -13,7 +13,7 @@
 * JQuery
 
 ## Description
-This is a page for a pizza parlor! Select the size and toppings you want, and it will display the cost of your pizza!
+This is a page for a pizza parlor! Select your quantity, the size and the toppings you want, and it will display the cost of your pizza! Checkout for carry out or delivery options!
 
 ## Setup/Installation Requirements
 
